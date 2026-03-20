@@ -12,7 +12,7 @@ if (a < 18) {
 }
 
 //Завдання 2
-let b = String(prompt("Введіть число"));
+let b = Number(prompt("Введіть число"));
 
 for(let i = 2; i <= b; i++) {
     console.log(i);
