@@ -6,7 +6,7 @@ const urls = [
 function fetchData(url) {
   return new Promise((resolve, reject) => {
     if (Math.random() < 0.3) {
-      reject("Помилка для ${url}");
+      reject(`Помилка для ${url}`);
       return;
     }
 
