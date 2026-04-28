@@ -41,7 +41,7 @@ if($_POST){
 
 <?= !empty($res) ? implode("<br>", $res) : "" ?>
 <br><br>
-//Варант 4, завдання 2
+//Варіант 4, завдання 2
 <?php
 
 $transactions = [
