@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    //Варіант 2, завдання 1
+    //Варіант 2
     <?php
 function isStrongPassword($p){
     return preg_match('/[A-Z]/',$p) && preg_match('/[0-9]/',$p) && strlen($p)>=8;
@@ -41,7 +41,7 @@ if($_POST){
 
 <?= !empty($res) ? implode("<br>", $res) : "" ?>
 <br><br>
-//Варіант 4, завдання 2
+//Варіант 4
 <?php
 
 $transactions = [
