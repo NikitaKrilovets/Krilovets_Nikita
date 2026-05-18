@@ -6,8 +6,9 @@ $file = "users.json";
 $users = json_decode(file_get_contents($file), true);
 
 $method = $_SERVER["REQUEST_METHOD"];
-$uri = explode("/", trim($_SERVER["REQUEST_URI"], "/"));
-$id = $uri[1] ?? null;
+$path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+$uri = explode("/", trim($path, "/"));
+$id = $uri[2] ?? null;
 
 if ($method == "GET" && !$id) {
     echo json_encode($users);
